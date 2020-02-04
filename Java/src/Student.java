@@ -1,9 +1,13 @@
-public class Personnel {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
+public class Student {
     private String name;
     private boolean match;
-    private String [] rank;
+    private List<String> rank;
 
-    public Personnel(String name, boolean match, String [] rank){
+    public Student(String name, boolean match, List<String> rank){
         this.name=name;
         this.match=match;
         this.rank=rank;
@@ -17,7 +21,7 @@ public class Personnel {
         return match;
     }
 
-    public String [] getRank(){
+    public List<String> getRank(){
         return rank;
     }
 
