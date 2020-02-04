@@ -16,7 +16,7 @@ public class MatchingCore {
                     }else{
                         int currentRank = prospect.getRank().indexOf(match.get(candidate));
                         int futureRank = prospect.getRank().indexOf(tmp.getName());
-                        if(futureRank>currentRank){
+                        if(futureRank<currentRank){
                             String pastCompany =(String)match.get(candidate);
                             ((Company)employer.get(pastCompany)).setMatch(false);
                             ((Company)employer.get(tmp.getName())).setMatch(true);
