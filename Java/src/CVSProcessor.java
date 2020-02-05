@@ -1,9 +1,7 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
-public class CVSParser {
+public class CVSProcessor {
 
     public void parser(Map personnel, String location, String cvsSplitter, String line, String type){
         try (BufferedReader br = new BufferedReader(new FileReader(location))) {
@@ -29,4 +27,6 @@ public class CVSParser {
         }
 
     }
+
+
 }
